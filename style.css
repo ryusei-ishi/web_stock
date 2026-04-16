@@ -795,6 +795,184 @@ ul {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* --- Page Hero (subpages) --- */
+.page-hero {
+  padding-top: 72px;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 50%, #fce4ec 100%);
+}
+
+.page-hero-content {
+  padding: 60px 24px 40px;
+}
+
+.page-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 400;
+  color: var(--color-text);
+  letter-spacing: 0.08em;
+}
+
+.nav-active {
+  color: var(--color-primary) !important;
+}
+
+/* --- Company Overview --- */
+.company-overview {
+  background: var(--color-warm-white);
+}
+
+.company-table-wrapper {
+  max-width: 760px;
+  margin: 48px auto 0;
+}
+
+.company-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.company-table tr {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.company-table th,
+.company-table td {
+  padding: 20px 0;
+  font-size: 0.9rem;
+  vertical-align: top;
+}
+
+.company-table th {
+  width: 120px;
+  font-weight: 400;
+  color: var(--color-text-light);
+  white-space: nowrap;
+  padding-right: 24px;
+}
+
+.company-table td {
+  color: var(--color-text);
+  line-height: 1.9;
+}
+
+/* --- Message --- */
+.message {
+  background: var(--color-cream);
+}
+
+.message-content {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-top: 48px;
+}
+
+.message-image-placeholder {
+  background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+  border-radius: var(--radius-lg);
+  aspect-ratio: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.message-image-placeholder span {
+  font-size: 4rem;
+}
+
+.message-image-placeholder p {
+  font-size: 0.8rem;
+  color: var(--color-text-lighter);
+}
+
+.message-text p {
+  font-size: 0.92rem;
+  line-height: 2.2;
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+
+.message-signature {
+  margin-top: 12px;
+  font-size: 0.88rem;
+  line-height: 2;
+  color: var(--color-text-light);
+  font-weight: 400;
+}
+
+/* --- History / Timeline --- */
+.history {
+  background: var(--color-warm-white);
+}
+
+.timeline {
+  max-width: 680px;
+  margin: 48px auto 0;
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--color-primary-light);
+  border-radius: 1px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 36px;
+  padding-left: 24px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -29px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary-pale);
+}
+
+.timeline-year {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+  letter-spacing: 0.05em;
+}
+
+.timeline-body h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.timeline-body p {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
 /* --- Responsive --- */
 @media (max-width: 1024px) {
   .bouquet-grid {
@@ -895,6 +1073,26 @@ ul {
 
   .shop-grid {
     grid-template-columns: 1fr;
+  }
+
+  .message-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .message-image-placeholder {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .company-table th {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .company-table td {
+    display: block;
+    padding-top: 4px;
   }
 
   .form-row {
