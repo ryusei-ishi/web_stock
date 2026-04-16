@@ -2,6 +2,88 @@
    Fleur Douce — Style Sheet
    ======================================== */
 
+/* --- Password Gate --- */
+.pw-gate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 50%, #fce4ec 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pw-gate.hidden {
+  display: none;
+}
+
+.pw-box {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  padding: 48px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(166, 124, 150, 0.12);
+  max-width: 380px;
+  width: 90%;
+}
+
+.pw-icon {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 16px;
+  color: #c4727f;
+}
+
+.pw-title {
+  font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+  font-size: 1.2rem;
+  color: #4a3f3f;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+.pw-desc {
+  font-size: 0.85rem;
+  color: #8a7e7e;
+  margin-bottom: 24px;
+}
+
+.pw-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid #e8ddd5;
+  border-radius: 8px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.95rem;
+  color: #4a3f3f;
+  background: #ffffff;
+  outline: none;
+  text-align: center;
+  letter-spacing: 0.1em;
+  transition: border-color 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.pw-input:focus {
+  border-color: #e8a5ae;
+}
+
+.pw-btn {
+  width: 100%;
+  padding: 14px;
+}
+
+.pw-error {
+  color: #c4727f;
+  font-size: 0.82rem;
+  margin-top: 12px;
+  min-height: 1.2em;
+}
+
 /* --- Reset & Base --- */
 *,
 *::before,

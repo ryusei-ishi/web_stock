@@ -4,6 +4,40 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // --- パスワード認証 ---
+  // ★ パスワードはここで変更できます ★
+  const SITE_PASSWORD = 'fleur2026';
+
+  const gate = document.getElementById('password-gate');
+  const pwInput = document.getElementById('pw-input');
+  const pwSubmit = document.getElementById('pw-submit');
+  const pwError = document.getElementById('pw-error');
+
+  if (gate) {
+    // すでに認証済みならスキップ
+    if (sessionStorage.getItem('pw-auth') === 'ok') {
+      gate.classList.add('hidden');
+    }
+
+    const tryAuth = () => {
+      if (pwInput.value === SITE_PASSWORD) {
+        sessionStorage.setItem('pw-auth', 'ok');
+        gate.style.transition = 'opacity 0.4s ease';
+        gate.style.opacity = '0';
+        setTimeout(() => gate.classList.add('hidden'), 400);
+      } else {
+        pwError.textContent = 'パスワードが違います';
+        pwInput.value = '';
+        pwInput.focus();
+      }
+    };
+
+    pwSubmit.addEventListener('click', tryAuth);
+    pwInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') tryAuth();
+    });
+  }
+
   // --- ハンバーガーメニュー ---
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.nav');
