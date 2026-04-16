@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleur Douce — やさしさを届ける花屋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">✿</span>
+        <span class="logo-text">Fleur Douce</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#concept">Concept</a></li>
+          <li><a href="#bouquets">Bouquets</a></li>
+          <li><a href="#seasonal">Seasonal</a></li>
+          <li><a href="#shop">Shop Info</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-sub">— flowers for your precious days —</p>
+      <h1 class="hero-title">日常に、<br>やさしい彩りを。</h1>
+      <p class="hero-desc">大切なあの人へ、がんばった自分へ。<br>一輪の花がそっと気持ちを届けます。</p>
+      <a href="#bouquets" class="btn btn-primary">花束を見る</a>
+    </div>
+  </section>
+
+  <!-- コンセプト -->
+  <section id="concept" class="section concept">
+    <div class="container">
+      <div class="section-label">Concept</div>
+      <h2 class="section-title">花と暮らす、やさしい毎日</h2>
+      <div class="concept-grid">
+        <div class="concept-text">
+          <p>
+            Fleur Douce（フルール・ドゥース）は、<br>
+            フランス語で「やさしい花」という意味。
+          </p>
+          <p>
+            私たちは、お花がもつ小さな力を信じています。<br>
+            朝、テーブルに一輪の花があるだけで、<br>
+            その日がすこし特別なものになる。
+          </p>
+          <p>
+            季節の移ろいを感じられる花々を、<br>
+            一本一本ていねいに選び、<br>
+            あなたの想いをかたちにします。
+          </p>
+        </div>
+        <div class="concept-image">
+          <div class="concept-image-placeholder">
+            <span>❀</span>
+            <p>やさしい光の中の花束</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 人気の花束 -->
+  <section id="bouquets" class="section bouquets">
+    <div class="container">
+      <div class="section-label">Bouquets</div>
+      <h2 class="section-title">人気のブーケ</h2>
+      <p class="section-desc">心を込めてお作りする、季節のブーケたち</p>
+      <div class="bouquet-grid">
+        <article class="bouquet-card">
+          <div class="bouquet-image">
+            <div class="bouquet-image-placeholder" style="background-color: #f8e8e8;">
+              <span>🌸</span>
+            </div>
+            <span class="bouquet-badge">人気 No.1</span>
+          </div>
+          <div class="bouquet-info">
+            <h3>Tendre Rose</h3>
+            <p class="bouquet-desc">淡いピンクのバラを中心に、カスミソウとユーカリをあしらったやさしいブーケ</p>
+            <p class="bouquet-price">¥4,400 <span class="tax">（税込）</span></p>
+          </div>
+        </article>
+        <article class="bouquet-card">
+          <div class="bouquet-image">
+            <div class="bouquet-image-placeholder" style="background-color: #f0e6f6;">
+              <span>💐</span>
+            </div>
+          </div>
+          <div class="bouquet-info">
+            <h3>Violet Dream</h3>
+            <p class="bouquet-desc">ラベンダーとライラックが香る、夢見るような紫のアレンジメント</p>
+            <p class="bouquet-price">¥5,500 <span class="tax">（税込）</span></p>
+          </div>
+        </article>
+        <article class="bouquet-card">
+          <div class="bouquet-image">
+            <div class="bouquet-image-placeholder" style="background-color: #fdf5e6;">
+              <span>🌼</span>
+            </div>
+          </div>
+          <div class="bouquet-info">
+            <h3>Soleil Doux</h3>
+            <p class="bouquet-desc">ガーベラとマーガレットで作る、太陽のようにあたたかなブーケ</p>
+            <p class="bouquet-price">¥3,850 <span class="tax">（税込）</span></p>
+          </div>
+        </article>
+        <article class="bouquet-card">
+          <div class="bouquet-image">
+            <div class="bouquet-image-placeholder" style="background-color: #e8f4ec;">
+              <span>🌿</span>
+            </div>
+          </div>
+          <div class="bouquet-info">
+            <h3>Forêt Verte</h3>
+            <p class="bouquet-desc">グリーンを主役にした、ナチュラルで洗練されたスワッグスタイル</p>
+            <p class="bouquet-price">¥4,950 <span class="tax">（税込）</span></p>
+          </div>
+        </article>
+      </div>
+      <div class="section-cta">
+        <a href="#" class="btn btn-outline">すべてのブーケを見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 季節のおすすめ -->
+  <section id="seasonal" class="section seasonal">
+    <div class="container">
+      <div class="section-label">Seasonal</div>
+      <h2 class="section-title">春のおすすめ</h2>
+      <div class="seasonal-banner">
+        <div class="seasonal-banner-content">
+          <p class="seasonal-tag">Spring Collection 2026</p>
+          <h3>桜と春の草花の<br>スペシャルブーケ</h3>
+          <p>
+            春だけの特別なお花を集めて。<br>
+            チューリップ、ラナンキュラス、スイートピー…<br>
+            やわらかな春の色をお届けします。
+          </p>
+          <a href="#" class="btn btn-primary">春のコレクションを見る</a>
+        </div>
+        <div class="seasonal-banner-deco">
+          <span class="deco-flower deco-1">🌷</span>
+          <span class="deco-flower deco-2">🌸</span>
+          <span class="deco-flower deco-3">✿</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- サービス -->
+  <section class="section services">
+    <div class="container">
+      <div class="section-label">Services</div>
+      <h2 class="section-title">わたしたちにできること</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-icon">💝</div>
+          <h3>ギフトラッピング</h3>
+          <p>大切な方への贈り物に。<br>メッセージカードも無料でお付けします。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🚗</div>
+          <h3>配達サービス</h3>
+          <p>市内は送料無料でお届け。<br>ご希望の日時にお届けします。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💒</div>
+          <h3>ウェディング装花</h3>
+          <p>ブーケ、会場装花、ヘッドドレスまで。<br>おふたりの特別な日をお花で彩ります。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏠</div>
+          <h3>定期便サブスク</h3>
+          <p>月に2回、旬のお花をご自宅へ。<br>暮らしにそっと花を添えるサービスです。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お客様の声 -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-label">Voice</div>
+      <h2 class="section-title">お客様の声</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">「母の日に贈ったブーケ、母がとても喜んでくれました。色合いがとてもやさしくて、センスの良さに感動です。」</p>
+          <p class="testimonial-author">— M.K さん（30代）</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">「定期便を利用しています。届くたびに季節を感じられて、お部屋が明るくなります。毎回どんな花が届くか楽しみです。」</p>
+          <p class="testimonial-author">— A.S さん（20代）</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">「結婚式のブーケをお願いしました。想像以上に素敵で、写真映えも最高。一生の思い出になりました。」</p>
+          <p class="testimonial-author">— Y.T さん（30代）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram -->
+  <section class="section instagram">
+    <div class="container">
+      <div class="section-label">Instagram</div>
+      <h2 class="section-title">日々の花だより</h2>
+      <p class="section-desc">@fleur_douce でお花のある暮らしを発信しています</p>
+      <div class="insta-grid">
+        <div class="insta-item" style="background-color: #f8e8e8;"><span>🌹</span></div>
+        <div class="insta-item" style="background-color: #e8f0f8;"><span>💠</span></div>
+        <div class="insta-item" style="background-color: #f0e6f6;"><span>🪻</span></div>
+        <div class="insta-item" style="background-color: #fdf5e6;"><span>🌻</span></div>
+        <div class="insta-item" style="background-color: #e8f4ec;"><span>🌿</span></div>
+        <div class="insta-item" style="background-color: #fce4ec;"><span>🌺</span></div>
+      </div>
+      <div class="section-cta">
+        <a href="#" class="btn btn-outline">Instagramをフォロー</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 店舗情報 -->
+  <section id="shop" class="section shop-info">
+    <div class="container">
+      <div class="section-label">Shop Info</div>
+      <h2 class="section-title">店舗のご案内</h2>
+      <div class="shop-grid">
+        <div class="shop-details">
+          <table class="shop-table">
+            <tr>
+              <th>店名</th>
+              <td>Fleur Douce（フルール・ドゥース）</td>
+            </tr>
+            <tr>
+              <th>住所</th>
+              <td>〒150-0001<br>東京都渋谷区神宮前3-15-8</td>
+            </tr>
+            <tr>
+              <th>電話</th>
+              <td>03-0000-1234</td>
+            </tr>
+            <tr>
+              <th>営業時間</th>
+              <td>10:00〜19:00</td>
+            </tr>
+            <tr>
+              <th>定休日</th>
+              <td>毎週水曜日</td>
+            </tr>
+            <tr>
+              <th>アクセス</th>
+              <td>東京メトロ「表参道」駅 A2出口より徒歩5分</td>
+            </tr>
+          </table>
+        </div>
+        <div class="shop-map">
+          <div class="map-placeholder">
+            <span>📍</span>
+            <p>Google Map</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">お問い合わせ</h2>
+      <p class="section-desc">ご質問やオーダーのご相談など、お気軽にどうぞ</p>
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">お名前</label>
+            <input type="text" id="name" placeholder="山田 花子">
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" placeholder="example@email.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">ご用件</label>
+          <select id="subject">
+            <option value="">選択してください</option>
+            <option>花束のオーダーについて</option>
+            <option>ウェディングのご相談</option>
+            <option>定期便について</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">メッセージ</label>
+          <textarea id="message" rows="5" placeholder="お気軽にご記入ください"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">送信する</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-icon">✿</span>
+          <span class="logo-text">Fleur Douce</span>
+          <p class="footer-tagline">やさしさを届ける花屋</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="#concept">コンセプト</a></li>
+              <li><a href="#bouquets">ブーケ</a></li>
+              <li><a href="#seasonal">季節のおすすめ</a></li>
+              <li><a href="#shop">店舗情報</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Service</h4>
+            <ul>
+              <li><a href="#">オンラインショップ</a></li>
+              <li><a href="#">定期便サブスク</a></li>
+              <li><a href="#">ウェディング</a></li>
+              <li><a href="#">法人のお客様</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LINE</a></li>
+              <li><a href="#">Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fleur Douce. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
